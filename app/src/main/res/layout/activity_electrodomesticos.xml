@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Electrodomesticos">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/electrodomesticos" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="208dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/editTextFactura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout7"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="220dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Electrodomésticos"
+            android:textSize="22sp"
+            app:autoSizeTextType="none" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegistrarEle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="150dp"
+        android:text="Registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp"
+        android:text="Factura"
+        android:textSize="24sp"
+
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toStartOf="@+id/editTextFactura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="60dp"
+        android:text="Garantías"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toStartOf="@+id/editTextGarantia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="85dp"
+
+        android:text="Incentivos"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarEle"
+        app:layout_constraintEnd_toStartOf="@+id/editTextIncentivo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+
+    <EditText
+        android:id="@+id/editTextFactura"
+        android:layout_width="181dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:singleLine="true"
+        android:maxLength="6"
+        android:hint="Ingrese Factura"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/editTextGarantia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout8" />
+
+    <EditText
+        android:id="@+id/editTextGarantia"
+        android:layout_width="181dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="55dp"
+        android:ems="10"
+        android:singleLine="true"
+        android:maxLength="2"
+        android:hint="Ingrese Datos"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/editTextIncentivo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFactura" />
+
+    <EditText
+        android:id="@+id/editTextIncentivo"
+        android:layout_width="181dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="90dp"
+        android:ems="10"
+        android:singleLine="true"
+        android:maxLength="3"
+        android:hint="Ingrese Datos"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarEle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGarantia" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
